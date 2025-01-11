@@ -95,7 +95,7 @@ It's easy to sign up and offers a very generous free tier. Some lessons (in Modu
 
 * Currently, Studio only has macOS support and needs Docker Desktop running.
 * Download the latest `.dmg` file [here](https://github.com/langchain-ai/langgraph-studio?tab=readme-ov-file#download)
-* Install Docker desktop for Mac [here](https://docs.docker.com/engine/install/)
+* Install Docker desktop for Mac [here](https://docs.docker.com/desktop/setup/install/mac-install/)
 
 ### Running Studio
 Graphs for LangGraph Studio are in the `module-x/studio/` folders.
@@ -109,3 +109,5 @@ $ for i in {1..4}; do
 done
 $ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 ```
+* starting studio, choose a studio foler unless activating files
+* if setting is alright, you can see the graph something.
