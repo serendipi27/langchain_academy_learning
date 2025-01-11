@@ -40,11 +40,25 @@ PS> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 PS> lc-academy-env\scripts\activate
 PS> pip install -r requirements.txt
 ```
+#### Otherwise, virtuaal env in anaconda
+```
+$ conda create -n langchain-academy-env python=3.11
+$ conda activate langchain-academy-env
+$ python -m pip install --upgrade pip
+$ pip install -r requirements.txt
+```
 
 ### Running notebooks
 If you don't have Jupyter set up, follow installation instructions [here](https://jupyter.org/install).
 ```
 $ jupyter notebook
+```
+
+### register env to jupyte ipykernel
+```
+$ pip install ipykernel
+$ python -m ipykernel install --user --name <가상환경_이름> --display-name "<표시될_커널_이름>"
+$ jupyter kernelspec list
 ```
 
 ### Setting up env variables
